@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Corte Suprema de Justicia de la Nación</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;
+            border-bottom: 1px solid #ccc;
+        }
+        header img {
+            height: 60px;
+        }
+        header nav a {
+            margin-left: 20px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .navbar {
+            background: #0071bc;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Palacio_Justicia_Argentina.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            background: rgba(0, 41, 102, 0.6);
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero input[type="text"] {
+            padding: 10px;
+            width: 60%;
+            max-width: 400px;
+            border: none;
+            border-radius: 4px;
+        }
+        .hero button {
+            padding: 10px 15px;
+            background: #0071bc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        .content-boxes {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background: #f4f4f4;
+        }
+        .box {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            border-top: 5px solid #0071bc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .box h3 {
+            color: #0071bc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Escudo_de_la_Rep%C3%BAblica_Argentina.svg/1200px-Escudo_de_la_Rep%C3%BAblica_Argentina.svg.png" alt="Escudo">
+            <span style="font-size: 22px; font-weight: bold; margin-left: 10px; color:#003399;">CORTE SUPREMA<br>DE JUSTICIA DE LA NACIÓN</span>
+        </div>
+        <nav>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Acceso a la información pública</a>
+            <a href="#">Justicia.ar</a>
+            <a href="#">Instagram</a>
+        </nav>
+    </header>
+
+    <div class="navbar">
+        <a href="#">INSTITUCIONAL</a>
+        <a href="#">DECISIONES</a>
+        <a href="#">TRANSPARENCIA</a>
+        <a href="#">SERVICIOS</a>
+        <a href="#">NOVEDADES</a>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>La Corte Suprema de Justicia de la Nación</h2>
+            <p>es el más alto tribunal de la República Argentina y órgano máximo del Poder Judicial.</p>
+            <p>Su misión es asegurar la supremacía constitucional y custodiar los derechos y garantías de la Constitución Nacional.</p>
+            <br>
+            <input type="text" placeholder="Buscar Acordadas y Resoluciones de la CSJN">
+            <button>🔍</button>
+        </div>
+    </div>
+
+    <div class="content-boxes">
+        <div class="box">
+            <h3>Sentencias</h3>
+            <p>Fallos del Tribunal. Sumarios y boletines de Jurisprudencia</p>
+        </div>
+        <div class="box">
+            <h3>Acordadas</h3>
+            <p>Normas de funcionamiento de la CSJN</p>
+        </div>
+        <div class="box">
+            <h3>Resoluciones</h3>
+            <p>Decisiones relativas a asuntos administrativos</p>
+        </div>
+    </div>
+
+</body>
+</html>
